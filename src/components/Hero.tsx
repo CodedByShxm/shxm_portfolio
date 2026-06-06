@@ -32,7 +32,7 @@ const stagger = {
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
-  show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } },
+  show: { opacity: 1, y: 0, transition: { duration: 0.8 } },
 };
 
 export default function Hero() {
@@ -48,11 +48,10 @@ export default function Hero() {
       {/* Ambient background orbs */}
       <div className="absolute inset-0 pointer-events-none">
         <motion.div
-          style={{ y: bgY }}
+          style={{ y: bgY, background: "radial-gradient(circle, var(--color-accent) 0%, transparent 70%)" }}
           className="absolute top-[-10%] right-[-5%] w-[60vw] h-[60vw] max-w-[700px] max-h-[700px] rounded-full opacity-[0.07]"
           animate={{ scale: [1, 1.05, 1], rotate: [0, 15, 0] }}
           transition={{ duration: 18, repeat: Infinity, ease: "easeInOut" }}
-          style={{ background: "radial-gradient(circle, var(--color-accent) 0%, transparent 70%)" }}
         />
         <motion.div
           className="absolute bottom-[-15%] left-[-10%] w-[50vw] h-[50vw] max-w-[600px] max-h-[600px] rounded-full opacity-[0.05]"
@@ -65,9 +64,8 @@ export default function Hero() {
       {/* BG ghost text */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden select-none">
         <motion.span
-          style={{ y: bgY, opacity }}
+          style={{ y: bgY, opacity, WebkitTextStroke: "1px rgba(240,237,228,0.035)" }}
           className="font-[family-name:var(--font-display)] text-[22vw] leading-none tracking-tight text-transparent select-none"
-          style={{ WebkitTextStroke: "1px rgba(240,237,228,0.035)" }}
         >
           Brown-Wright
         </motion.span>
