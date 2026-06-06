@@ -4,10 +4,10 @@ import { motion, useInView } from "motion/react";
 import { IconArrowUpRight, IconBrandGithub, IconBrandLinkedin, IconBrandTwitter, IconMail } from "@tabler/icons-react";
 
 const socials = [
-  { icon: IconBrandGithub, label: "GitHub", href: "#" },
-  { icon: IconBrandLinkedin, label: "LinkedIn", href: "#" },
-  { icon: IconBrandTwitter, label: "Twitter", href: "#" },
-  { icon: IconMail, label: "Email", href: "mailto:alex@sterling.dev" },
+  { icon: IconBrandGithub, label: "GitHub", href: "https://github.com/CodedByShxm" },
+  { icon: IconBrandLinkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/shemarbrownwright/" },
+  { icon: IconBrandTwitter, label: "Twitter", href: "https://twitter.com/CodedByShxm" },
+  { icon: IconMail, label: "Email", href: "mailto:shemrs1@gmail.com" },
 ];
 
 export default function Contact() {
@@ -69,14 +69,14 @@ export default function Contact() {
           className="flex flex-col sm:flex-row gap-4 mb-16"
         >
           <a
-            href="mailto:alex@sterling.dev"
+            href="mailto:shemrs1@gmail.com"
             className="group inline-flex items-center gap-3 bg-[var(--color-accent)] text-[var(--color-bg)] font-[family-name:var(--font-mono)] text-[0.75rem] uppercase tracking-[0.14em] px-8 py-4 hover:bg-[#e8ff5a] transition-all duration-200 hover:scale-105 active:scale-95"
           >
             Send an email
             <IconArrowUpRight size={15} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-200" />
           </a>
           <a
-            href="#"
+            href="https://drive.google.com/file/d/1Ub3FdpZDxfetgTgmxbDthYPHXinHFJvy/view?usp=sharing"
             className="inline-flex items-center gap-2 font-[family-name:var(--font-mono)] text-[0.75rem] uppercase tracking-[0.14em] text-[var(--color-ink2)] border border-[var(--color-line2)] px-8 py-4 hover:border-[var(--color-ink2)] hover:text-[var(--color-ink)] transition-all duration-200"
           >
             Download CV

@@ -24,6 +24,16 @@ const projects = [
   accent: "var(--color-accent3)",
   year: "2026",
 },
+{
+  num: "03",
+  title: "Portfolio",
+  tags: ["Next.js", "React", "TypeScript", "UI/UX Design"],
+  desc: "Personal portfolio showcasing engineering and creative work, featuring modern UI design, responsive layouts, and smooth interactive animations.",
+  link: "#",
+  gh: "#",
+  accent: "var(--color-accent3)",
+  year: "2026",
+},
 ]
 
 function ProjectCard({ project, index }: { project: typeof projects[0]; index: number }) {

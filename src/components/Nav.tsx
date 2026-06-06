@@ -6,6 +6,7 @@ import { IconArrowUpRight } from "@tabler/icons-react";
 const links = [
   { label: "Work", href: "#work" },
   { label: "Art", href: "#art" },
+  { label: "Career", href: "#career" },
   { label: "About", href: "#about" },
   { label: "Contact", href: "#contact" },
 ];

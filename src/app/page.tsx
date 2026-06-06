@@ -6,6 +6,7 @@ import Work from "@/components/Work";
 import Art from "@/components/Art";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
+import CareerTimeline from "@/components/Career";
 
 export default function Page() {
   return (
@@ -17,6 +18,7 @@ export default function Page() {
         <Marquee />
         <Work />
         <Art />
+        <CareerTimeline/>
         <About />
         <Contact />
       </main>
